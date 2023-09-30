@@ -1,4 +1,8 @@
+"use client"
+
 import React from 'react'
+import { signOut } from 'next-auth/react'
+
 
 const UserInfo = () => {
   return (
@@ -13,7 +17,7 @@ const UserInfo = () => {
                 </span>
             </div>
 
-            <button className='bg-red-500 text-white font-bold px-6 py-2 mt-3 rounded-md'>Log Out</button>
+            <button onClick={() => signOut()} className='bg-red-500 text-white font-bold px-6 py-2 mt-3 rounded-md'>Log Out</button>
         </div>
     </div>
   )
