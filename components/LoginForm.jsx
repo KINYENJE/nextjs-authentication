@@ -45,7 +45,7 @@ const LoginForm = () => {
                     
                     <input type="email" placeholder="Enter your email" className='border-2 border-gray-300 p-2 w-full my-2 rounded-lg' onChange={(e) => setEmail(e.target.value)} />
                     <input type="password" placeholder="Enter your password" className='border-2 border-gray-300 p-2 w-full my-2 rounded-lg' onChange={(e) => setPassword(e.target.value)} />
-                    <input type="submit" value="Login" className='bg-green-400 text-white p-2 w-full my-2 rounded-lg cursor-pointer' onClick={handleSubmit}/>
+                    <input type="submit" value="Login" className='bg-green-400 text-white p-2 w-full my-2 rounded-lg cursor-pointer' onClick={handleSubmit }/>
 
                     {error && (
                       <div className='bg-red-500 text-white w-fit text-sm py-1 px-3 rounded-md mt-2'>{error}
